@@ -1,6 +1,6 @@
 :root {
-    --font-family-base: 'Open Sans', san-serif;
-    --font-family-title: 'Raleway', san-serif;
+    --font-family-base: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, san-serif;
+    --font-family-title: 'Raleway','Helvetica Neue', Helvetica, Arial, san-serif;
 }
 
 body {
