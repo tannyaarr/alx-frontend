@@ -1,6 +1,4 @@
-a[href]:link {
-    /* style for regula links*/
-}
+a[href]:link {}
 
 a[href]:visited {
     font-style: italic;
