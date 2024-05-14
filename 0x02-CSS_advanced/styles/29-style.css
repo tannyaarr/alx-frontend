@@ -1,53 +1,16 @@
-:root {
-  --color-primary: #d73953;
-  --color-black: #090909;
-  --color-white: #ffffff;
-  --color-light-grey: #f3f3f3;
-  --color-dark-grey: #353535;
-  --text-color: var(--color-black);
-  --transition-duration: .3s;
-  --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01);
-}
-
-/* Edit the nav-item-link-hover property */
-.nav .nav-item-link-hover {
-  color: var(--color-white);
-}
-
-/* Target the before pseudo elements of nav-link that is inside the nav */
-.nav .nav-link::before {
-  content: "";
+/* Target the before pseudo-elements of nav-link inside the nav */
+.nav-link::before {
+  content: ""; /* Empty content */
   position: absolute;
   top: 0;
   left: 0;
+  background-color: var(--color-white);
   width: 0;
   height: 20%;
-  background-color: var(--color-white);
 }
 
-/* Target the before pseudo elements of nav-link when nav-item is hover and is inside nav */
-.nav .nav-item:hover .nav-link::before {
-  background-color: var(--color-primary);
-  width: 100%;
-}
-
-/* Edit other required elements with transitions */
-.button:hover {
-  color: var(--button-hover-color);
-  background-color: var(--button-hover-background);
-}
-
-.card-work:hover .card-image {
-  transition: var(--transition-duration) var(--transition-cubic-bezier);
-  transform: scale(1.2);
-}
-
-.card-work:hover .card-outer {
-  transition: var(--transition-duration) var(--transition-cubic-bezier);
-  transform: scale(0.95);
-}
-
-.nav .nav-link:hover::before {
+/* Target the before pseudo-elements of nav-link when nav-item is hovered and is inside nav */
+.nav-item:hover .nav-link::before {
   background-color: var(--color-primary);
   width: 100%;
 }
