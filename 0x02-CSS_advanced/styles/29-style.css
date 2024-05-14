@@ -1,18 +1,38 @@
-.nav-item-link-hover {
+.nav .nav-item .nav-item-link-hover {
   color: var(--color-white);
 }
 
-nav .nav-link::before {
+.nav .nav-link::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
-  background-color: var(--color-white);
   width: 0;
   height: 20%;
+  background-color: var(--color-white);
 }
 
-nav .nav-item:hover .nav-link::before {
+.nav .nav-item:hover .nav-link::before {
+  background-color: var(--color-primary);
+  width: 100%;
+}
+
+.button:hover {
+  color: var(--button-hover-color);
+  background-color: var(--button-hover-background);
+}
+
+.card-work:hover .card-image {
+  transition: var(--transition-duration) var(--transition-cubic-bezier);
+  transform: scale(1.2);
+}
+
+.card-work:hover .card-outer {
+  transition: var(--transition-duration) var(--transition-cubic-bezier);
+  transform: scale(0.95);
+}
+
+.nav .nav-link:hover::before {
   background-color: var(--color-primary);
   width: 100%;
 }
